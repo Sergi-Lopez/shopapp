@@ -1,11 +1,12 @@
 package com.shop.shopapp.service.product;
 
 import com.shop.shopapp.model.Product;
+import com.shop.shopapp.request.AddProductRequest;
 
 import java.util.List;
 
 public interface iProductService {
-    void addProduct(Product product);
+    Product addProduct(AddProductRequest request);
     Product getProductById(Long id);
     void deleteProductById(Long id);
     void updateProduct(Product product, Long productId);
